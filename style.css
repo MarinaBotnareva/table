@@ -1,10 +1,19 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(68, 68, 68);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-sizing: border-box;
+  font-size: 1vw;
 }
 
 table {
+  max-width: 1000px;
+  min-width: 30px;
+  width: 100%;
+  max-height: 430px;
+  min-height: 15px;
+  height: 100%;
   overflow: hidden;
   border-collapse: collapse;
   text-align: center; 
@@ -12,18 +21,28 @@ table {
 }
 
 td {
-  padding: 15px 25px;
+  padding: 2vh 1.5vw;
 }
 
 thead {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: bold;
   color: #fff;
 }
 
 div {
-  font-size: 2rem;
-  padding-top: 25%;
+  font-size: 2vw;
+  padding-top: 3vh;
+}
+
+tr td:nth-child(n+2) {
+  max-width:220px;
+  min-width: 2px;
+  width: calc(100%/6);
+  max-height: 120px;
+  min-height: 3px;
+  height: calc(100%/4);
+
 }
 
 thead td:nth-child(1) {
@@ -47,12 +66,10 @@ thead td:nth-child(5) {
 }
 
 tbody tr td:nth-child(1) {
-  width:220px;
+  max-width:300px;
+  min-width: 4px;
+  width: calc(100%/4);
   text-align: left;
-}
-
-tr td:nth-child(n+2) {
-  width:120px;
 }
 
 tbody tr:nth-child(odd) {
@@ -72,6 +89,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: gray;
-  padding: 5px 10px;
+  padding: 0.5vh 1vw;
   background-color: #dbdbdb;
 }
