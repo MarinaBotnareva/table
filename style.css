@@ -1,48 +1,46 @@
 * {
   box-sizing: border-box;
+  padding:0;
+  margin:0;
+
 }
 body {
   background-color: rgb(68, 68, 68);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1vw;
+  font-size: 1.4rem;
 }
 
 table {
-  max-width: 1000px;
-  min-width: 30px;
-  width: 100%;
-  max-height: 430px;
-  min-height: 15px;
-  height: 100%;
+  max-width: 1300px;
   overflow: hidden;
   border-collapse: collapse;
   text-align: center; 
   border-radius: 10px;
+  margin: 80px auto; 
 }
 
 td {
-  padding: 2vh 1.5vw;
+  padding: 1.5em 1em;
 }
 
 thead {
-  font-size: 1.2vw;
+  font-size: 1.2em;
   font-weight: bold;
   color: #fff;
 }
 
 div {
-  font-size: 2vw;
-  padding-top: 3vh;
+  font-size: 2em;
+  padding-top: 1em;
 }
 
 tr td:nth-child(n+2) {
-  max-width:220px;
+  max-width:250px;
   min-width: 2px;
   width: calc(100%/6);
   max-height: 120px;
   min-height: 3px;
   height: calc(100%/4);
-
 }
 
 thead td:nth-child(1) {
@@ -70,6 +68,7 @@ tbody tr td:nth-child(1) {
   min-width: 4px;
   width: calc(100%/4);
   text-align: left;
+  padding: 1em 2em;
 }
 
 tbody tr:nth-child(odd) {
@@ -89,6 +88,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: gray;
-  padding: 0.5vh 1vw;
+  padding: 0.5em 1em;
   background-color: #dbdbdb;
+}
+
+a:hover {
+  background-color: #868686;
+  color: #fff;
 }
